@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hub communication</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      background: #1e1e1e;
+      font-family: sans-serif;
+    }
+
+    #menu {
+      width: 100px;
+      background: #2d2d2d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin: 15px;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+
+    .icon:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <img src="assets/whatsapp.png" class="icon" onclick="window.api.switchService(0)" />
+    <img src="assets/slack.png" class="icon" onclick="window.api.switchService(1)" />
+    <img src="assets/teams.png" class="icon" onclick="window.api.switchService(2)" />
+    <img src="assets/outlook.png" class="icon" onclick="window.api.switchService(3)" />
+  </div>
+</body>
+</html>
