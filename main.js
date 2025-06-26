@@ -51,11 +51,11 @@ function switchView(index) {
 }
 
 function updateViewBounds() {
-  const bounds = mainWindow.getBounds();
+  const bounds = mainWindow.getContentBounds();
   views[currentViewIndex].setBounds({
     x: 100, 
     y: 0,
-    width: bounds.width - 200,
+    width: bounds.width - 100,
     height: bounds.height,
   });
   views[currentViewIndex].setAutoResize({ width: true, height: true });
