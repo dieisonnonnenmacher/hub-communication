@@ -6,6 +6,7 @@ const SERVICES = [
   { name: 'Slack', url: 'https://slack.com/signin' },
   { name: 'Teams', url: 'https://teams.microsoft.com' },
   { name: 'Outlook', url: 'https://outlook.office.com' },
+  { name: 'Telegram', url: 'https://web.telegram.org/a/' },
 ];
 
 let mainWindow;
